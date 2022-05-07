@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RDFSharp.Model.RDFAndConstraint" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIAAAAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFAndConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFClassConstraint" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAQAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFClassConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFClosedConstraint" Collapsed="true">
+    <Position X="22.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAABAAAAAAAAAAAAAAAAAgAAAEAAAAAAACAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFClosedConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="88" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAQACAgAQIAAAABAwAAAAAEEAAAAAAAAAgA=</HashCode>
+      <FileName>Model\RDFCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFConstraint" Collapsed="true">
+    <Position X="39.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\RDFConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFContainer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="89.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAgAQAAAAABAwAAAAAEEAAAAAAEEAgA=</HashCode>
+      <FileName>Model\RDFContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFDataSource" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAEQAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Model\RDFDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFDatatypeConstraint" Collapsed="true">
+    <Position X="56.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFDatatypeConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFDisjointConstraint" Collapsed="true">
+    <Position X="60.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAEAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFDisjointConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFEqualsConstraint" Collapsed="true">
+    <Position X="65.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFEqualsConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFGraph" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAgACAAIAgJQ0DCWkAAAVECAJQgCIHAEAEDAAAIALBA=</HashCode>
+      <FileName>Model\RDFGraph.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFGraphIndex" Collapsed="true">
+    <Position X="91.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgAAAEIAAAAAADAAAACAAAAAAAAAABkIAAAAAAAAAAg=</HashCode>
+      <FileName>Model\RDFGraphIndex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFHasValueConstraint" Collapsed="true">
+    <Position X="24.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFHasValueConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFInConstraint" Collapsed="true">
+    <Position X="33.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAQAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFInConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFLanguageInConstraint" Collapsed="true">
+    <Position X="38.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFLanguageInConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFLessThanConstraint" Collapsed="true">
+    <Position X="47.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFLessThanConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFLessThanOrEqualsConstraint" Collapsed="true">
+    <Position X="51.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFLessThanOrEqualsConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFLiteral" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\RDFLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFMaxCountConstraint" Collapsed="true">
+    <Position X="63" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFMaxCountConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFMaxExclusiveConstraint" Collapsed="true">
+    <Position X="67.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFMaxExclusiveConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFMaxInclusiveConstraint" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFMaxInclusiveConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFMaxLengthConstraint" Collapsed="true">
+    <Position X="15.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFMaxLengthConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFMinCountConstraint" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAABAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFMinCountConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFMinExclusiveConstraint" Collapsed="true">
+    <Position X="36" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFMinExclusiveConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFMinInclusiveConstraint" Collapsed="true">
+    <Position X="40.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFMinInclusiveConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFMinLengthConstraint" Collapsed="true">
+    <Position X="49.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAABAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFMinLengthConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFModelEnums" Collapsed="true">
+    <Position X="93.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="RDFSharp.Model.RDFModelEnums.RDFContainerTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\RDFModelEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="RDFSharp.Model.RDFModelEnums.RDFDatatypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\RDFModelEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="RDFSharp.Model.RDFModelEnums.RDFFormats" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\RDFModelEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="RDFSharp.Model.RDFModelEnums.RDFItemTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\RDFModelEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="RDFSharp.Model.RDFModelEnums.RDFTripleFlavors" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\RDFModelEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\RDFModelEnums.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFModelException" Collapsed="true">
+    <Position X="95" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\RDFModelException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFModelUtilities" Collapsed="true">
+    <Position X="88" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEAACBIAQAgBhAAgAgAgAAAABAAEBABAgAAEBAAAA=</HashCode>
+      <FileName>Model\RDFModelUtilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFNamespace" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="89.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAIAQAAAAAAQAAEkAgAAAAAQAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\RDFNamespace.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFNamespaceRegister" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="91.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAAAAAAACAAAAIAAAAQAQAAAAFAAAEQAAABAIACIA=</HashCode>
+      <FileName>Model\RDFNamespaceRegister.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFNodeConstraint" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAIAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFNodeConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFNodeKindConstraint" Collapsed="true">
+    <Position X="29.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFNodeKindConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFNodeShape" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Shapes\RDFNodeShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFNotConstraint" Collapsed="true">
+    <Position X="42.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFNotConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFNTriples" Collapsed="true">
+    <Position X="93.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAASAAAIAYAAAAAEAAAaBEAAAAQggAAAAAAAA=</HashCode>
+      <FileName>Model\Serializers\RDFNTriples.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFOrConstraint" Collapsed="true">
+    <Position X="54" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIAAAAAABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFOrConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFPatternConstraint" Collapsed="true">
+    <Position X="58.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAEAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFPatternConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFPlainLiteral" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAECAAAAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\RDFPlainLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFPropertyConstraint" Collapsed="true">
+    <Position X="69.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFPropertyConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFPropertyShape" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAgEAAAAAgAAIAAAACAQAAAAAAQAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Shapes\RDFPropertyShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFQualifiedValueShapeConstraint" Collapsed="true">
+    <Position X="20.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAACAAAAAAAAAAAAAAAAAAAAAAAEAAAAEAACAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFQualifiedValueShapeConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFResource" Collapsed="true">
+    <Position X="45" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Model\RDFResource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFShape" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAABAAABAAAAAAAiAAA0AAFEEAQAAAQQwAQQ=</HashCode>
+      <FileName>Model\Validation\Abstractions\RDFShape.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFShapesGraph" Collapsed="true">
+    <Position X="72" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFIAAAAAAABCEAAAAAAAAAAAAAAAEECQBAAAAAAUA=</HashCode>
+      <FileName>Model\Validation\Abstractions\RDFShapesGraph.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTarget" Collapsed="true">
+    <Position X="77.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\RDFTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTargetClass" Collapsed="true">
+    <Position X="74.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Targets\RDFTargetClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTargetNode" Collapsed="true">
+    <Position X="76.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Targets\RDFTargetNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTargetObjectsOf" Collapsed="true">
+    <Position X="78.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Targets\RDFTargetObjectsOf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTargetSubjectsOf" Collapsed="true">
+    <Position X="81" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Targets\RDFTargetSubjectsOf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTriple" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="95" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAEAAAAAkgIAAAAADgAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Model\RDFTriple.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTriX" Collapsed="true">
+    <Position X="88" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAQAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serializers\RDFTriX.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTurtle" Collapsed="true">
+    <Position X="89.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="RDFSharp.Model.RDFTurtle.RDFTurtleContext" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Serializers\RDFTurtle.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>MQB4EAAQCEDAFBAQoASgrApEAClAgkAAgQSAFBASAAA=</HashCode>
+      <FileName>Model\Serializers\RDFTurtle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFTypedLiteral" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAACAAAAEgAAAAAABAAAAAAAAAAgAQgAAAEA=</HashCode>
+      <FileName>Model\RDFTypedLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFUniqueLangConstraint" Collapsed="true">
+    <Position X="45" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFUniqueLangConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFValidationEngine" Collapsed="true">
+    <Position X="91.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAAAACAAA=</HashCode>
+      <FileName>Model\Validation\RDFValidationEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFValidationEnums" Collapsed="true">
+    <Position X="93.25" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="RDFSharp.Model.RDFValidationEnums.RDFNodeKinds" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Validation\RDFValidationEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="RDFSharp.Model.RDFValidationEnums.RDFShapeSeverity" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Validation\RDFValidationEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\RDFValidationEnums.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFValidationHelper" Collapsed="true">
+    <Position X="95" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQACAAABAAAAAAAAAAJIAAAAAAAgCBAAAAAACAA=</HashCode>
+      <FileName>Model\Validation\RDFValidationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFValidationReport" Collapsed="true">
+    <Position X="83.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAABABAAAICAAAAAEEIQgAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\RDFValidationReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RDFSharp.Model.RDFValidationResult" Collapsed="true">
+    <Position X="85.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAAAAAAAAAAAAAAAAAAAQAABAAEAAACAAAQAAAg=</HashCode>
+      <FileName>Model\Validation\RDFValidationResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFVocabulary" Collapsed="true">
+    <Position X="88" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="RDFSharp.Model.RDFVocabulary.XML" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\XML.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.CRM" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\CRM.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.RDFSHARP" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\RDFSHARP.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.DC">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Class Name="RDFSharp.Model.RDFVocabulary.DC.DCAM" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Model\Vocabularies\DC.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="RDFSharp.Model.RDFVocabulary.DC.DCTERMS" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Model\Vocabularies\DC.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="RDFSharp.Model.RDFVocabulary.DC.DCTYPE" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Model\Vocabularies\DC.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\DC.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.OWL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\OWL.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.SWRL">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Class Name="RDFSharp.Model.RDFVocabulary.SWRL.SWRLB" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Model\Vocabularies\SWRL.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\SWRL.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.SIOC" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\SIOC.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.RDF" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\RDF.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.SHACL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\SHACL.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.GEO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\GEO.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.XSD" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\XSD.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.SKOS">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Class Name="RDFSharp.Model.RDFVocabulary.SKOS.SKOSXL" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Model\Vocabularies\SKOS.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\SKOS.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.FOAF" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\FOAF.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.EARL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\EARL.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.DOAP" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\DOAP.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.VS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\VS.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RDFSharp.Model.RDFVocabulary.RDFS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Vocabularies\RDFS.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Vocabularies\CRM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFXml" Collapsed="true">
+    <Position X="89.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIEgAAACgAAABQAAAAACAAAACBQQBggAQACAAjACgA=</HashCode>
+      <FileName>Model\Serializers\RDFXml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RDFSharp.Model.RDFXoneConstraint" Collapsed="true">
+    <Position X="31.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIAAAAAAAAAAAAAAAAAAAAAAAAgEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Validation\Abstractions\Constraints\RDFXoneConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
