@@ -1,12 +1,13 @@
 # RDFSharp
 
-Az RDFSharp egy moduláris API, ami 4 layerből áll.
+Ez a program egy olyan API, ami egy Szemantikus web leíró adatbázishoz hasonlóan működik, képes RDF modelleket tárolni.
 
-A következő feladatokra hasznáható:
+Az RDFSharp a következő feladatokra használható:
 
-- RDDF modelek létrehozása és managelése.
-- RDF storeok létrehozása.
-- SPRQL lekérdezések és operation-ök létrehozása, és futtatása.
-- OWL-Dl ontológiák létrehozása és managelése, validálása.
-- SWRL reasonerek létrehozása és futtatása.
+- RDF modelek létrehozása, menedzselése, validálása és.
+- SHACL nyelvi alapon validálás.
+- RDF tárolók létrehozása, menedzselése.
+- SPARQL lekérdezések és műveletek létrehozása és futtatása.
+- OWL-Dl ontológiák létrehozása, menedzselése, validálása.
+- SWRL érvelések létrehozása és futtatása.
 - SKOS sémák létrehozása és managelése.
