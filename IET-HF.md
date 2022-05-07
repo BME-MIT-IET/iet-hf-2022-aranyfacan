@@ -1,8 +1,8 @@
 # RDFSharp
 
-Ez a program egy olyan API, ami egy Szemantikus web leíró adatbázishoz hasonlóan működik, képes RDF modelleket tárolni.
+## Ez a program egy olyan API, ami egy Szemantikus web leíró adatbázishoz hasonlóan működik, képes RDF modelleket tárolni.
 
-Az RDFSharp a következő feladatokra használható:
+### Az RDFSharp a következő feladatokra használható:
 
 - RDF modelek létrehozása, menedzselése, validálása és.
 - SHACL nyelvi alapon validálás.
