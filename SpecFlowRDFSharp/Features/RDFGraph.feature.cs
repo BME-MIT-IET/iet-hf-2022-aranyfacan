@@ -113,6 +113,15 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
  testRunner.Given("Create RDFGraph", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+#line 7
+ testRunner.Given("Add RDFTriples 100", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 8
+ testRunner.Then("Get RDFTriple 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 9
+ testRunner.Then("Union of graphs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
             }
             this.ScenarioCleanup();
         }
