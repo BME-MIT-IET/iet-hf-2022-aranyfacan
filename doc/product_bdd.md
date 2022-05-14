@@ -13,8 +13,8 @@ A BDD (viselkedésvezérelt programozás) az egy tesztelési forma, ahol a teszt
 
 Szenárió:
 
-![scenario](/pics/product_bdd_pic1.png)
+![scenario](/doc/pics/product_bdd_pic1.png)
 
 Eredmény:
 
-![result](/pics/product_bdd_pic2.png)
+![result](/doc/pics/product_bdd_pic2.png)
