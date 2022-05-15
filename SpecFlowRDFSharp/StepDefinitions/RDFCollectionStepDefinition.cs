@@ -12,6 +12,8 @@ namespace SpecFlowRDFSharp.StepDefinitions
     {
         private RDFCollection? collection;
 
+        private RDFResource? resource;
+
         private string testURI = @"https://www.reddit.com/";
 
         /// <summary>
@@ -38,7 +40,9 @@ namespace SpecFlowRDFSharp.StepDefinitions
 
             int prevSize = collection?.ItemsCount ?? 0;
 
-            collection?.AddItem(new RDFResource(testURI));
+            resource = new RDFResource(testURI);
+
+            collection?.AddItem(resource);
 
             Assert.NotEqual(prevSize, collection?.ItemsCount);
         }
@@ -59,5 +63,19 @@ namespace SpecFlowRDFSharp.StepDefinitions
             Assert.Equal(prevSize, collection?.ItemsCount);
         }
 
+        /// <summary>
+        /// Tests the Collection's remove function with trying to remove the added resource element.
+        /// </summary>
+        [Then("Remove the Added Resource from Collection")]
+        public void ThenRemoveIndexFromCollection()
+        {
+            Assert.NotNull(collection);
+
+            int prevSize = collection?.ItemsCount ?? 0;
+
+            collection?.RemoveItem(resource);
+
+            Assert.NotEqual(prevSize, collection?.ItemsCount);
+        }
     }
 }

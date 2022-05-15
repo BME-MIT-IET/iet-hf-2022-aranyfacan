@@ -119,6 +119,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line 9
  testRunner.And("Add Literal To Collection", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+#line 10
+ testRunner.Then("Remove the Added Resource from Collection", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

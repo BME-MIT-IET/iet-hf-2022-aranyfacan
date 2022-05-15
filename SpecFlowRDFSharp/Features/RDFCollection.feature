@@ -7,3 +7,4 @@ Scenario: Testing Collection class
 	Given Create Collection
 	And Add Resource To Collection
 	And Add Literal To Collection
+	Then Remove the Added Resource from Collection
