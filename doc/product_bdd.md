@@ -18,6 +18,10 @@ A Specflow-t választottuk a megadott technológiák közül, mert azt .NET-es p
 
 ![final_results](/doc/pics/product_bdd_pic3.png)
 
+## Saját élmény:
+
+Egészen megtetszett nekünk a BDD alapelve, miszerint ember számára könnyen olvasható teszt parancsokkal sokkal könnyebb tesztelni. Talán a minimális programozási overhead-et is megéri ez a módszer, viszont a stringekkel való munka nem biztos, hogy átlátható egy nagyobb projekt esetén is.
+
 ### BDD tesztelés esetén a feladatok:
 
 1. Kiválasztani azt az osztályt/függvényt/funkciót a programból, amit tesztelni szeretnénk.
