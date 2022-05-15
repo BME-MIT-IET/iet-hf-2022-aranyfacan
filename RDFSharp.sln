@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RDFSharp.Test", "RDFSharp.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RDFSharp.Try", "RDFSharp.Try\RDFSharp.Try.csproj", "{6095A0F8-AB8B-42A7-A6A0-C70FAA41E4AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark1", "Benchmark1\Benchmark1.csproj", "{3ADB38E6-3C80-4C6D-AF39-A7F4D3749103}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDFSharp.NonFunctionalTest", "Benchmark1\RDFSharp.NonFunctionalTest.csproj", "{3ADB38E6-3C80-4C6D-AF39-A7F4D3749103}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
