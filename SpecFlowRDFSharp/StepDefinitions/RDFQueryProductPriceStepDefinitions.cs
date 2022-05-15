@@ -111,6 +111,10 @@ namespace SpecFlowRDFSharp.StepDefinitions
             query.AddModifier(new RDFLimitModifier(1));
         }
 
+        /// <summary>
+        /// Depending on the input, add's an Order Modifier to the Query.
+        /// </summary>
+        /// <param name="order">Must be "asc" or "desc"</param>
         [Given("Query Order is (.*)")]
         public void GivenOrderQuery(string order = "asc")
         {
@@ -122,12 +126,19 @@ namespace SpecFlowRDFSharp.StepDefinitions
                 query?.AddModifier(new RDFOrderByModifier(priceVAR, RDFQueryEnums.RDFOrderByFlavors.DESC));
         }
 
+        /// <summary>
+        /// Runs the query on a graph.
+        /// </summary>
         [Then("Run the Query")]
         public void ThenRunQuery()
         {
             result = query?.ApplyToGraph(graph);
         }
 
+        /// <summary>
+        /// Depending on the input, checks the lowest and the highest price.
+        /// </summary>
+        /// <param name="minOrMax">Must be "min" for lowest and "max" for highest.</param>
         [Then("Get the (.*) product")]
         public void ThenGetMinOrMaxProduct(string minOrMax = "min")
         {
