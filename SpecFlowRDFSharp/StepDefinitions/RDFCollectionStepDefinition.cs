@@ -10,10 +10,19 @@ namespace SpecFlowRDFSharp.StepDefinitions
     [Binding]
     internal class RDFCollectionStepDefinition
     {
+        /// <summary>
+        /// Contains the collection we are trying to test.
+        /// </summary>
         private RDFCollection? collection;
 
+        /// <summary>
+        /// Contains a testresource.
+        /// </summary>
         private RDFResource? resource;
 
+        /// <summary>
+        /// TestURI for creating Resources.
+        /// </summary>
         private string testURI = @"https://www.reddit.com/";
 
         /// <summary>
@@ -76,6 +85,37 @@ namespace SpecFlowRDFSharp.StepDefinitions
             collection?.RemoveItem(resource);
 
             Assert.NotEqual(prevSize, collection?.ItemsCount);
+        }
+
+        /// <summary>
+        /// Tests the collection's ReifyCollection function.
+        /// It creates a (NOT NULL) reified graph from the collection.
+        /// The collection's items should be the new graph's triples.
+        /// </summary>
+        [Then("Create Graph from Collection")]
+        public void ThenCreateGraphFromCollection()
+        {
+            Assert.NotNull(collection);
+
+            Assert.Equal(0, collection?.ItemsCount ?? 0);
+
+            int size = 12;
+
+            for (int i = 0; i < size; i++)
+            {
+                //testURI + i: because the collection doesn't contain duplicated data, uri must be uniqe
+                collection?.AddItem(new RDFResource(testURI + i.ToString()));
+            }
+
+            var graph = collection?.ReifyCollection();
+
+            Assert.NotNull(graph);
+
+            Assert.Equal(size, collection?.ItemsCount);
+
+            //For every item in this collection, the graph will contain 3 item (triples)
+            //That's why the graph's triplescount must be 3x bigger then collection's itemscount
+            Assert.Equal((graph?.TriplesCount).ToString(), (collection?.ItemsCount * 3).ToString());
         }
     }
 }

@@ -83,11 +83,11 @@ namespace SpecFlowRDFSharp.Features
         [Xunit.SkippableFactAttribute(DisplayName="Testing Collection class")]
         [Xunit.TraitAttribute("FeatureTitle", "RDFCollection")]
         [Xunit.TraitAttribute("Description", "Testing Collection class")]
-        [Xunit.TraitAttribute("Category", "tag1collection")]
+        [Xunit.TraitAttribute("Category", "collection")]
         public virtual void TestingCollectionClass()
         {
             string[] tagsOfScenario = new string[] {
-                    "tag1collection"};
+                    "collection"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Testing Collection class", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
@@ -121,6 +121,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
 #line 10
  testRunner.Then("Remove the Added Resource from Collection", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 11
+ testRunner.Then("Create Graph from Collection", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
