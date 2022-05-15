@@ -9,12 +9,16 @@ A BDD (viselkedésvezérelt programozás) az egy tesztelési forma, ahol a teszt
 3. Megírni a szenáriókat.
 4. Lefuttatni a teszteket, majd az eredményekből következtetést levonni.
 
-### Példa `RDFGraph` osztály részfunkcióinak tesztelése:
+### Példa az `RDFGraph` osztály részfunkcióinak tesztelésére:
 
-Szenárió:
+#### Példa ezenárió:
 
 ![scenario](/doc/pics/product_bdd_pic1.png)
 
-Eredmény:
+#### Példa eredmény:
 
 ![result](/doc/pics/product_bdd_pic2.png)
+
+## Végleges tesztek lefutása:
+
+![final_results](/doc/pics/product_bdd_pic3.png)
