@@ -24,9 +24,9 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Calculating coverage
-      run: dotnet test UnitTest/UnitTest.csproj /p:CollectCoverage=true /p:CoverletOutput=UnitTestResults/ /p:CoverletOutputFormat=lcov
+      run: dotnet test RDFSharp.Test/RDFSharp.Test.csproj /p:CollectCoverage=true /p:CoverletOutput=UnitTestResults/ /p:CoverletOutputFormat=lcov
     - name: Publish coverage report to coveralls.io
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: UnitTest/UnitTestResults/coverage.info
+        path-to-lcov: RDFSharp.Test/RDFSharp.Test.Results/coverage.info
