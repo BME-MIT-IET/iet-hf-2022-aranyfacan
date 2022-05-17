@@ -27,8 +27,8 @@ jobs:
       run: dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal <MyProject>.Tests/
       
     - name: Create Test Coverage Badge
-      uses: BME-MIT-IET/iet-hf-2022-aranyfacan@v1.0.0
-      id: iet-hf-2022-aranyfacan
+      uses: simon-k/dotnet-code-coverage-badge@v1.0.0
+      id: create_coverage_badge
       with:
         label: Unit Test Coverage
         color: brightgreen
