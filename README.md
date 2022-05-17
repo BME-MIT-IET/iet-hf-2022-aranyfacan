@@ -28,3 +28,5 @@ RDFSharp has a modular API made up of 4 layers:
     <li>Create and execute <b>SWRL reasoners</b> with forward-chaining materialization of ontology inferences</li>
     <li>Create and manage <b>SKOS schemes</b> (concepts, collections, relations, annotations, labels, ...)</li>
 </ul>
+
+![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Zsupi/c5c25ee0ba49db53c057c80403f36858/raw/code-coverage.yml)
