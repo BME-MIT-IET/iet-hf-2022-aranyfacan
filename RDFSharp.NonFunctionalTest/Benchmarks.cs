@@ -9,8 +9,6 @@ namespace RDFSharp.NonFunctionalTest
 {
     public class Benchmarks
     {
-        RDFGraph graph1 = new RDFGraph();
-        RDFGraph graph2 = new RDFGraph();
 
         public void createGraph()
         {
@@ -53,24 +51,38 @@ namespace RDFSharp.NonFunctionalTest
         [Benchmark]
         public void Scenario2()
         {
-            //var xmlFormat = RDFModelEnums.RDFFormats.RdfXml;
-            //// READ RDF/XML FILE
-            ////az xml.txt a C:\\xml.txt
+            RDFGraph graph1_1 = new RDFGraph();
+            RDFGraph graph1_2 = new RDFGraph();
+            RDFGraph graph2 = new RDFGraph();
+            RDFGraph graph3 = new RDFGraph();
 
-            //File.SetAttributes("C:\\xml.txt", FileAttributes.Normal);
-            //var graph = RDFGraph.FromFile(xmlFormat, "C:\\xml.txt");
-            //Console.WriteLine("Graph from xml file: " + graph.ToString());
+            for (int i = 0; i < 100; i++)
+            {
+                var resource1_1 = new RDFResource(RDFVocabulary.RDF.BASE_URI + "resource" + i);
+                var vocabulary1_1 = RDFVocabulary.RDF.TYPE;
+                var typedLiteral = new RDFTypedLiteral("true", RDFModelEnums.RDFDatatypes.XSD_BOOLEAN);
+                graph1_1.AddTriple(new RDFTriple(resource1_1, vocabulary1_1, typedLiteral));
+            }
 
-            //var turtleFormat = RDFModelEnums.RDFFormats.Turtle;
-            //File.SetAttributes("C:\\turtle.txt", FileAttributes.Normal);
-            //var graphFromTurtle = RDFGraph.FromFile(turtleFormat, "C:\\turtle.txt");
-            //Console.WriteLine("Graph from turtle file: " + graphFromTurtle.ToString());
+            for (int i = 0; i < 100; i++)
+            {
+                var resource1_2 = new RDFResource(RDFVocabulary.RDFSHARP.BASE_URI + "resource" + i);
+                var vocabulary1_2 = RDFVocabulary.RDF.VALUE;
+                var plainLiteral = new RDFPlainLiteral("literal");
+                graph1_2.AddTriple(new RDFTriple(resource1_2, vocabulary1_2, plainLiteral));
+            }
 
-            //File.SetAttributes("C:\\trix.txt", FileAttributes.Normal);
-            //var trixFormat = RDFModelEnums.RDFFormats.TriX;
-            //// READ TRIX FILE
-            //var graphFromTrix = RDFGraph.FromFile(trixFormat, "C:\\trix.txt");
+            for (int i = 0; i < 100; i++)
+            {
+                var container = new RDFContainer(RDFModelEnums.RDFContainerTypes.Seq, RDFModelEnums.RDFItemTypes.Resource);
+                graph2.AddContainer(container);
+            }
+
+            for (int i = 0; i < 100; i++)
+            {
+                var collection = new RDFCollection(RDFModelEnums.RDFItemTypes.Resource);
+                graph3.AddCollection(collection);
+            }
         }
-
     }
 }
