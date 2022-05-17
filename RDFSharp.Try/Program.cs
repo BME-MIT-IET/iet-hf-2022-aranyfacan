@@ -23,3 +23,55 @@ var farquaad = new RDFTriple(
     );
 
 Console.WriteLine("Farquaad's data: " + farquaad.ToString());
+
+
+
+//DirectoryInfo asd = new DirectoryInfo(@"..\..\..\..\xml.txt");
+//Console.WriteLine(asd.FullName);
+
+var xmlFormat = RDFModelEnums.RDFFormats.RdfXml;
+var turtleFormat = RDFModelEnums.RDFFormats.Turtle;
+var ntriplesFormat = RDFModelEnums.RDFFormats.NTriples;
+var trixFormat = RDFModelEnums.RDFFormats.TriX;
+
+//READ RDF/XML FILE
+//file location needs to be iet-hf-2022-aranyfacan
+File.SetAttributes(@"..\..\..\..\xml.rdf", FileAttributes.Normal);
+var graph = RDFGraph.FromFile(xmlFormat, @"..\..\..\..\xml.rdf");
+Console.WriteLine("\r\nGraph from xml file: " + graph.ToString());
+foreach (var triple in graph.ToList())
+{
+    Console.WriteLine(triple.ToString());
+}
+
+graph.ToFile(turtleFormat, @"..\..\..\..\turtle.ttl");
+graph.ToFile(trixFormat, @"..\..\..\..\trix.trix");
+graph.ToFile(ntriplesFormat, @"..\..\..\..\ntriples.nt");
+
+//READ TURTLE FILE
+File.SetAttributes(@"..\..\..\..\turtle.ttl", FileAttributes.Normal);
+var graphFromTurtle = RDFGraph.FromFile(turtleFormat, @"..\..\..\..\turtle.ttl");
+Console.WriteLine("\r\nGraph from turtle file: " + graphFromTurtle.ToString());
+foreach (var triple in graphFromTurtle.ToList())
+{
+    Console.WriteLine(triple.ToString());
+}
+
+
+// READ TRIX FILE
+File.SetAttributes(@"..\..\..\..\trix.trix", FileAttributes.Normal);
+var graphFromTrix = RDFGraph.FromFile(trixFormat, @"..\..\..\..\trix.trix");
+Console.WriteLine("\r\nGraph from trix file: " + graph.ToString());
+foreach (var triple in graphFromTrix.ToList())
+{
+    Console.WriteLine(triple.ToString());
+}
+
+// READ N-TRIPLES FILE
+File.SetAttributes(@"..\..\..\..\ntriples.nt", FileAttributes.Normal);
+var graphNTrples = RDFGraph.FromFile(ntriplesFormat, @"..\..\..\..\ntriples.nt");
+Console.WriteLine("\r\nGraph from ntriples file: " + graph.ToString());
+foreach (var triple in graphNTrples.ToList())
+{
+    Console.WriteLine(triple.ToString());
+}
