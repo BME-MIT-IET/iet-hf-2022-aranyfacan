@@ -22,10 +22,10 @@ jobs:
     steps:
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: ./RDFSharp
+      working-directory: /RDFSharp
     - name: Build
       run: dotnet build --no-restore
-      working-directory: ./RDFSharp
+      working-directory: /RDFSharp
   
   test:
     needs: build
