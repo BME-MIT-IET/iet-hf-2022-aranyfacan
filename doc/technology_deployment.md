@@ -24,7 +24,7 @@ A kapott konténerbeli image lefutattása: *docker run -it --rm ietlab/aranyfaca
 
 ## Kapott kimenet
 
-![Dockerfile kimenete](/doc/pics/docker_on_jonas_PC.PNG)
+![Dockerfile kimenete](/doc/pics/docker_on_jonas_PC.png)
 
 # Saját tapasztalat
 
