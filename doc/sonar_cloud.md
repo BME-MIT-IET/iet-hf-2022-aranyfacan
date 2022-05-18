@@ -27,7 +27,7 @@
 
   - Az action futtatásának eredményében láthatunk pár code-smellt. Ezek általában az átláthatósággal (pl.: " 'CRM' to match pascal case naming rules") és biztonsággal (pl.: "not to use hardcoded absolute paths") kapcsolatos javaslatok.
 
-  - A code-smellek számára való tekintettel és hogy ezek nem jelentettek drasztikus hibákat a kódban, a csapattal úgy döntöttünk, hogy ennek javítását nem vesszük egyenlőre figyelembe.
+  - A code-smellek számára való tekintettel és hogy ezek nem jelentettek drasztikus hibákat a kódban, a csapattal úgy döntöttünk, hogy ezek megoldása nem javítaná nagy mértékben a kód minőségét.
 
 - CodeCoverage:
      Az action sikeres lefutása után a százalékos lefedettséget a readme.md file-ban olvashatjuk.
