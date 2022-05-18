@@ -7,49 +7,58 @@ using System.Linq;
 
 namespace RDFSharp.NonFunctionalTest
 {
+    [SimpleJob(launchCount: 1, warmupCount: 5, targetCount: 20)]
     public class Benchmarks
     {
+        RDFModelEnums.RDFFormats xmlFormat = RDFModelEnums.RDFFormats.RdfXml;
+        RDFModelEnums.RDFFormats turtleFormat = RDFModelEnums.RDFFormats.Turtle;
+        RDFModelEnums.RDFFormats ntriplesFormat = RDFModelEnums.RDFFormats.NTriples;
+        RDFModelEnums.RDFFormats trixFormat = RDFModelEnums.RDFFormats.TriX;
 
-        public void createGraph()
+        [GlobalSetup]
+        public void GlobalSetup()
         {
-
-        }
-
-        [Benchmark(Baseline = true)]
-        public void Scenario1()
-        {
-            //DirectoryInfo asd = new DirectoryInfo(@"..\..\..\..\xml.txt");
-            //Console.WriteLine(asd.FullName);
-
-            var xmlFormat = RDFModelEnums.RDFFormats.RdfXml;
-            var turtleFormat = RDFModelEnums.RDFFormats.Turtle;
-            var ntriplesFormat = RDFModelEnums.RDFFormats.NTriples;
-            var trixFormat = RDFModelEnums.RDFFormats.TriX;
-
-            //READ RDF/XML FILE
             //file location needs to be iet-hf-2022-aranyfacan\xml.rdf
             File.SetAttributes(@"..\..\..\..\..\..\..\..\xml.rdf", FileAttributes.Normal);
+            File.SetAttributes(@"..\..\..\..\..\..\..\..\turtle.ttl", FileAttributes.Normal);
+            File.SetAttributes(@"..\..\..\..\..\..\..\..\trix.trix", FileAttributes.Normal);
+            File.SetAttributes(@"..\..\..\..\..\..\..\..\ntriples.nt", FileAttributes.Normal);
+        }
+
+        [Benchmark]
+        public void Scenario1()
+        {
+            //READ RDF/XML FILE
+            //file location needs to be iet-hf-2022-aranyfacan\xml.rdf
             var graph = RDFGraph.FromFile(xmlFormat, @"..\..\..\..\..\..\..\..\xml.rdf");
 
-            graph.ToFile(turtleFormat, @"..\..\..\..\..\..\..\..\turtle.ttl");
-            graph.ToFile(trixFormat, @"..\..\..\..\..\..\..\..\trix.trix");
-            graph.ToFile(ntriplesFormat, @"..\..\..\..\..\..\..\..\ntriples.nt");
-
-            //READ TURTLE FILE
-            File.SetAttributes(@"..\..\..\..\..\..\..\..\turtle.ttl", FileAttributes.Normal);
-            var graphFromTurtle = RDFGraph.FromFile(turtleFormat, @"..\..\..\..\..\..\..\..\turtle.ttl");
-
-            // READ TRIX FILE
-            File.SetAttributes(@"..\..\..\..\..\..\..\..\trix.trix", FileAttributes.Normal);
-            var graphFromTrix = RDFGraph.FromFile(trixFormat, @"..\..\..\..\..\..\..\..\trix.trix");
-
-            // READ N-TRIPLES FILE
-            File.SetAttributes(@"..\..\..\..\..\..\..\..\ntriples.nt", FileAttributes.Normal);
-            var graphNTrples = RDFGraph.FromFile(ntriplesFormat, @"..\..\..\..\..\..\..\..\ntriples.nt");
+            //graph.ToFile(turtleFormat, @"..\..\..\..\..\..\..\..\turtle.ttl");
+            //graph.ToFile(trixFormat, @"..\..\..\..\..\..\..\..\trix.trix");
+            //graph.ToFile(ntriplesFormat, @"..\..\..\..\..\..\..\..\ntriples.nt");
         }
 
         [Benchmark]
         public void Scenario2()
+        {
+            //READ TURTLE FILE
+            var graphFromTurtle = RDFGraph.FromFile(turtleFormat, @"..\..\..\..\..\..\..\..\turtle.ttl");
+        }
+        [Benchmark]
+        public void Scenario3()
+        {
+            // READ TRIX FILE
+            var graphFromTrix = RDFGraph.FromFile(trixFormat, @"..\..\..\..\..\..\..\..\trix.trix");
+        }
+
+        [Benchmark]
+        public void Scenario4()
+        {
+            // READ N-TRIPLES FILE
+            var graphNTrples = RDFGraph.FromFile(ntriplesFormat, @"..\..\..\..\..\..\..\..\ntriples.nt");
+        }
+
+        [Benchmark]
+        public void Scenario5()
         {
             RDFGraph graph1_1 = new RDFGraph();
             RDFGraph graph1_2 = new RDFGraph();
