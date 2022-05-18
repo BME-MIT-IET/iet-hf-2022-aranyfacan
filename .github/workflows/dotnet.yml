@@ -15,14 +15,16 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
 
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./RDFSharp
     - name: Build
       run: dotnet build --no-restore
+      working-directory: ./RDFSharp
   
   test:
     needs: build
