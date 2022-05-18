@@ -12,9 +12,10 @@ A teszteket visual studioban futtatuk, futás közben a konzolra írta, hogy ép
  llítani, ezt meg is tettük. Készítettem egy [GlobalSetup] függvényt is, ami az egész tesztelés eklőtt fut le, itt gondoskodom róla, hogy a fájlok
  biztosan olvashatóak legyenek.
  
- ###Eredmények
+ ### Eredmények
  
 Összes futás eredménye:
+
  ![](1.png)
  
  Metódusonkénti eredmény:
