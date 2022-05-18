@@ -15,7 +15,7 @@ Docker image-et, majd tesztelés képpen lefuttattam azt. Esetünkben a program 
 
 ## A Dockerfile tartalma
 
-![Dockerfile tartalma](/pics/dockerfile.png)
+![Dockerfile tartalma](/doc/pics/dockerfile.png)
 
 ## Kiadott parancsok
 
