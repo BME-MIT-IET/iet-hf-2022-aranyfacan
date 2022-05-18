@@ -2,6 +2,7 @@ name: Build
 on:
   push:
     branches:
+      - main
       - code_coverage
   pull_request:
     types: [opened, synchronize, reopened]
@@ -44,6 +45,8 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"BME-MIT-IET_iet-hf-2022-aranyfacan" /o:"bme-mit-iet-org" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet restore
-          dotnet test --collect "Code Coverage"
           dotnet build --configuration release
+          dotnet test --no-build --verbosity normal
+          dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal RDFSharp.Test/
+          dotnet test --collect "XPlat Code Coverage"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"

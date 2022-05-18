@@ -1,44 +1,44 @@
 name: .NET
 
 on:
-  push:
-    branches: [ code_coverage ]
-  pull_request:
-    branches: [ code_coverage ]
-
+  workflow_call:
+    workflows: ["Build"]
+    type:
+      - complete
 jobs:
-  build:
+  dotnet_code_coverage:
+    build:
 
-    runs-on: ubuntu-latest
+      runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-    - name: Test
-      run: dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal RDFSharp.Test/
-      
-    - name: Create Test Coverage Badge
-      uses: simon-k/dotnet-code-coverage-badge@v1.0.0
-      id: create_coverage_badge
-      with:
-        label: Unit Test Coverage
-        color: brightgreen
-        path: RDFSharp.Test/TestResults/coverage.opencover.xml
-        gist-filename: code-coverage.yml
-        gist-id: c5c25ee0ba49db53c057c80403f36858
-        gist-auth-token: ${{ secrets.GIST_AUTH_TOKEN }}
+      steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 6.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+      - name: Test
+        run: dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal RDFSharp.Test/
         
-    - name: Print code coverage
-      run: echo "Code coverage percentage ${{steps.create_coverage_badge.outputs.percentage}}%"
+      - name: Create Test Coverage Badge
+        uses: simon-k/dotnet-code-coverage-badge@v1.0.0
+        id: create_coverage_badge
+        with:
+          label: Unit Test Coverage
+          color: brightgreen
+          path: RDFSharp.Test/TestResults/coverage.opencover.xml
+          gist-filename: code-coverage.yml
+          gist-id: c5c25ee0ba49db53c057c80403f36858
+          gist-auth-token: ${{ secrets.GIST_AUTH_TOKEN }}
+          
+      - name: Print code coverage
+        run: echo "Code coverage percentage ${{steps.create_coverage_badge.outputs.percentage}}%"
 
-    - name: Print badge data
-      run: echo "Badge data ${{steps.test_step.outputs.badge}}"
+      - name: Print badge data
+        run: echo "Badge data ${{steps.test_step.outputs.badge}}"
