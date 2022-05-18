@@ -1,10 +1,11 @@
 name: .NET
 
 on:
-  workflow_run:
-    workflows: ["Build"]
-    type:
-      - complete
+  push:
+    branches: [ code_coverage ]
+  pull_request:
+    branches: [ code_coverage ]
+    
 jobs:
   setup:
     runs-on: ubuntu-latest
