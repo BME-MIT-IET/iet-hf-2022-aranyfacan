@@ -25,11 +25,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-  
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+
     - uses: actions/checkout@v3
     - name: Test
       run: dotnet test --no-build --verbosity normal
@@ -48,7 +44,7 @@ jobs:
         gist-auth-token: ${{ secrets.GIST_AUTH_TOKEN }}
     
   print:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Print code coverage
