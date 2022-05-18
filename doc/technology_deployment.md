@@ -24,6 +24,8 @@ A kapott konténerbeli image lefutattása: *docker run -it --rm ietlab/aranyfaca
 
 ## Kapott kimenet
 
+![Dockerfile kimenete](/doc/pics/docker_on_jonas_PC.PNG)
+
 # Saját tapasztalat
 
 Az elején magamtól próbáltam létrehozni a Dockerfile-t, ami sajnos sok időt el vitt és nem is működött. Ezután megtaláltam, hogy Visual Studio-ban létezik erre egy
