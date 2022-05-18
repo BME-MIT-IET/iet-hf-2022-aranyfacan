@@ -1,0 +1,33 @@
+## Nem-funkcionális jellemzők vizsgálata: teljesítmény
+
+### Felhasznált technológiák
+BenchmarkDotNet-et használtuk a benchmarkok készítéséhez és futtatásához.
+Készettettünk egy új projektet a teszteknek, ehhez telepítettük a megfelelő nuget csomagot.
+A teszteket visual studioban futtatuk, futás közben a konzolra írta, hogy éppen mit csinál, majd végül az eredményeket.
+
+ Az RDFSharp fájlból gráfot készítő funkcióját teszteltük. Négyféle fájltípust támogat: xml, turtle, trix, nTrilples. A célom az volt a tezstekkel, hogy kiderüljön,
+ hogy melyik fut a legyorsabban, és használja a legkevesebb erőforrást. 
+ Ezért ugyanazt a gráfot korábban leszerializáltattam mind a négy fájlformátumba, ezeket a fájlokat olvassuk be a teszt során.
+ Minden teszt külön metódust kell létrehozni, [Benchmark] attribútummal. Az osztály elé írt [SimpleJob] attribútummal lehet az egyes metódusok futásainak számát be
+ llítani, ezt meg is tettük. Készítettem egy [GlobalSetup] függvényt is, ami az egész tesztelés eklőtt fut le, itt gondoskodom róla, hogy a fájlok
+ biztosan olvashatóak legyenek.
+ 
+ ###Eredmények
+ 
+Összes futás eredménye:
+ ![](1.png)
+ 
+ Metódusonkénti eredmény:
+ ![](2.png)
+ 
+Összesített eredmények:
+ ![](3.png)
+Látható, hogy a a beolvasások nagyon hasonló ideig futottak,kivéve az ntriple-ös, ami jóval hoszabb időbe telt. 
+Garbage colection hívásokat is ennek kellett legtöbbször használnia. memóriában az xml az első, míg az ntriple az utolsó.
+viszont érdekes, hogy a szórása enek a legkevesebb, azaz kicsi az eltérés az egyes futások időtartama között.
+
+Összességében az nTriples szerepelt a legrosszabbul, nem sok értelmét látom a használatának.
+Memóriában az xml a nyerő, sebességben a trix, de nem olyan nagy az eltérés.
+ 
+ Warningok, hintek, jelmagyarázat, összfutásidő:
+ ![](4.png)
