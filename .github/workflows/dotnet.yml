@@ -20,6 +20,8 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+    - name: Print code coverage
+      run: ls -l
     - name: Restore dependencies
       run: dotnet restore
       working-directory: iet-hf-2022-aranyfacan/
