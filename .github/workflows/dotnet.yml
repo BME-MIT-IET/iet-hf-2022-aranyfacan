@@ -1,25 +1,33 @@
 name: .NET
 
 on:
-  workflow_call:
+  workflow_run:
     workflows: ["Build"]
     type:
       - complete
 jobs:
-  build:
-
+  setup:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
+
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+  
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Test
@@ -35,7 +43,11 @@ jobs:
         gist-filename: code-coverage.yml
         gist-id: c5c25ee0ba49db53c057c80403f36858
         gist-auth-token: ${{ secrets.GIST_AUTH_TOKEN }}
-        
+    
+  print:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
     - name: Print code coverage
       run: echo "Code coverage percentage ${{steps.create_coverage_badge.outputs.percentage}}%"
 
