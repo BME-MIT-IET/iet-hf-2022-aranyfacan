@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RDFSharp.Try", "RDFSharp.Tr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RDFSharp.NonFunctionalTest", "RDFSharp.NonFunctionalTest\RDFSharp.NonFunctionalTest.csproj", "{F3DB5678-97D7-49EB-8945-1B30B9CC8441}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowRDFSharp", "SpecFlowRDFSharp\SpecFlowRDFSharp.csproj", "{538F1E61-727C-4180-9673-CF9783B835B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,7 @@ Global
 		{6095A0F8-AB8B-42A7-A6A0-C70FAA41E4AE}.Debug|x86.Build.0 = Debug|Any CPU
 		{6095A0F8-AB8B-42A7-A6A0-C70FAA41E4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6095A0F8-AB8B-42A7-A6A0-C70FAA41E4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+
 		{6095A0F8-AB8B-42A7-A6A0-C70FAA41E4AE}.Release|ARM.ActiveCfg = Release|Any CPU
 		{6095A0F8-AB8B-42A7-A6A0-C70FAA41E4AE}.Release|ARM.Build.0 = Release|Any CPU
 		{6095A0F8-AB8B-42A7-A6A0-C70FAA41E4AE}.Release|ARM64.ActiveCfg = Release|Any CPU
@@ -105,6 +108,11 @@ Global
 		{F3DB5678-97D7-49EB-8945-1B30B9CC8441}.Release|x64.Build.0 = Release|Any CPU
 		{F3DB5678-97D7-49EB-8945-1B30B9CC8441}.Release|x86.ActiveCfg = Release|Any CPU
 		{F3DB5678-97D7-49EB-8945-1B30B9CC8441}.Release|x86.Build.0 = Release|Any CPU
+		{538F1E61-727C-4180-9673-CF9783B835B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538F1E61-727C-4180-9673-CF9783B835B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538F1E61-727C-4180-9673-CF9783B835B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538F1E61-727C-4180-9673-CF9783B835B7}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
