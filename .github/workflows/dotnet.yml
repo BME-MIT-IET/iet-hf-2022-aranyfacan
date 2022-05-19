@@ -25,36 +25,23 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-  
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - uses: actions/checkout@v3
     - name: Test
       run: dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal RDFSharp.Test/
-  
-  create_coverage_badge:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
     - name: Create Test Coverage Badge
       uses: simon-k/dotnet-code-coverage-badge@v1.0.0
       id: create_coverage_badge
       with:
-        label: RDFSharp Test Coverage
+        label: Unit Test Coverage
         color: brightgreen
-        path: ./RDFSharp.Test/TestResults/coverage.opencover.xml
+        path: RDFSharp.Test/TestResults/coverage.opencover.xml
         gist-filename: code-coverage.yml
         gist-id: c5c25ee0ba49db53c057c80403f36858
         gist-auth-token: ${{ secrets.GIST_AUTH_TOKEN }}
     
   print:
-    needs: create_coverage_badge
+    needs: test
     runs-on: ubuntu-latest
     steps:
     - name: Print code coverage
