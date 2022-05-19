@@ -41,4 +41,4 @@ Elemek létrehozásánál az elvárásoknak megfelelően a collection szerepelt 
  
  Warningok, hintek, jelmagyarázat, összfutásidő:
  ![](4.png)
- 
+
