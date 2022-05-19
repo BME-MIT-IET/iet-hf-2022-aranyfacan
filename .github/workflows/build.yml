@@ -52,3 +52,9 @@ jobs:
           dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal RDFSharp.Test/
           dotnet test --collect "XPlat Code Coverage"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
+  dotnetbuild:
+    name: dotnet.yml
+    steps:
+    - name: Run dotnet.yml
+      uses: ./.github/workflows/dotnet.yml
