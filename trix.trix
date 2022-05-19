@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TriX xmlns="http://www.w3.org/2004/03/trix/trix-1/">
+  <graph>
+    <uri>https://rdfsharp.codeplex.com/</uri>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Empire_Burlesque</uri>
+      <uri>http://www.recshop.fake/cd#artist</uri>
+      <plainLiteral>Bob Dylan</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Empire_Burlesque</uri>
+      <uri>http://www.recshop.fake/cd#country</uri>
+      <plainLiteral>USA</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Empire_Burlesque</uri>
+      <uri>http://www.recshop.fake/cd#company</uri>
+      <plainLiteral>Columbia</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Empire_Burlesque</uri>
+      <uri>http://www.recshop.fake/cd#price</uri>
+      <plainLiteral>10.90</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Empire_Burlesque</uri>
+      <uri>http://www.recshop.fake/cd#year</uri>
+      <plainLiteral>1985</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Hide_your_heart</uri>
+      <uri>http://www.recshop.fake/cd#artist</uri>
+      <plainLiteral>Bonnie Tyler</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Hide_your_heart</uri>
+      <uri>http://www.recshop.fake/cd#country</uri>
+      <plainLiteral>UK</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Hide_your_heart</uri>
+      <uri>http://www.recshop.fake/cd#company</uri>
+      <plainLiteral>CBS Records</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Hide_your_heart</uri>
+      <uri>http://www.recshop.fake/cd#price</uri>
+      <plainLiteral>9.90</plainLiteral>
+    </triple>
+    <triple>
+      <uri>http://www.recshop.fake/cd/Hide_your_heart</uri>
+      <uri>http://www.recshop.fake/cd#year</uri>
+      <plainLiteral>1988</plainLiteral>
+    </triple>
+  </graph>
+</TriX>
