@@ -1,22 +1,24 @@
 name: .NET
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_call:
+
 
 jobs:
-  build:
-
+  setup:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
+
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -25,7 +27,6 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Test
       run: dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal RDFSharp.Test/
-      
     - name: Create Test Coverage Badge
       uses: simon-k/dotnet-code-coverage-badge@v1.0.0
       id: create_coverage_badge
@@ -36,7 +37,11 @@ jobs:
         gist-filename: code-coverage.yml
         gist-id: c5c25ee0ba49db53c057c80403f36858
         gist-auth-token: ${{ secrets.GIST_AUTH_TOKEN }}
-        
+    
+  print:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
     - name: Print code coverage
       run: echo "Code coverage percentage ${{steps.create_coverage_badge.outputs.percentage}}%"
 
