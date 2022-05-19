@@ -58,4 +58,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run dotnet.yml
-      uses: ./.github/workflows/dotnet.yml
+      uses: ./.github/workflows/dotnet
