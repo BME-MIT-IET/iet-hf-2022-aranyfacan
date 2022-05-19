@@ -37,7 +37,7 @@ viszont érdekes, hogy a szórása enek a legkevesebb, azaz kicsi az eltérés a
 Összességében az nTriples szerepelt a legrosszabbul, nem sok értelmét látom a használatának.
 Memóriában az xml a nyerő, sebességben a trix, de nem olyan nagy az eltérés.
 
-Elemek létrehozásánál az elvárásoknak megfelelően a collection szerepelt a legjobban, ez jóval kevesebb időbe telt, mint a többi. A PlainLiterallal létrehozott triple és a container szinte ugyanannyi időt vettek igénybe, míg a TypedLiterallal létrehozott triple egy kicsivel többet, ám ez az eltérés jóval kisebb, mint a collection-é.
+Elemek létrehozásánál az elvárásoknak megfelelően a collection szerepelt a legjobban, ez jóval kevesebb időbe telt, mint a többi. A PlainLiterallal létrehozott triple és a container szinte ugyanannyi időt vettek igénybe, míg a TypedLiterallal létrehozott triple egy kicsivel többet, ám ez az eltérés jóval kisebb, mint a collectioné. Memóriából a containernek volt szüksége a legtöbbre.
  
  Warningok, hintek, jelmagyarázat, összfutásidő:
  ![](4.png)
