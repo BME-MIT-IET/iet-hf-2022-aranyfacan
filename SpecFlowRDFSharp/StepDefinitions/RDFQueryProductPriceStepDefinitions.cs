@@ -35,7 +35,9 @@ namespace SpecFlowRDFSharp.StepDefinitions
         /// Maximum price for testing the query.
         /// </summary>
         private int maximumPrice = 0;
-
+        /// <summary>
+        /// Prive of the variable.
+        /// </summary>
         RDFVariable? priceVAR = null;
         /// <summary>
         /// Creates an empty graph.
