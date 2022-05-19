@@ -33,6 +33,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - uses: actions/checkout@v3
     - name: Test
       run: dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal RDFSharp.Test/
   
@@ -40,11 +41,12 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
     - name: Create Test Coverage Badge
       uses: simon-k/dotnet-code-coverage-badge@v1.0.0
       id: create_coverage_badge
       with:
-        label: Unit Test Coverage
+        label: RDFSharp Test Coverage
         color: brightgreen
         path: RDFSharp.Test/TestResults/coverage.opencover.xml
         gist-filename: code-coverage.yml
