@@ -5,7 +5,11 @@ BenchmarkDotNet-et használtuk a benchmarkok készítéséhez és futtatásához
 Készettettünk egy új projektet a teszteknek, ehhez telepítettük a megfelelő nuget csomagot.
 A teszteket visual studioban futtatuk, futás közben a konzolra írta, hogy éppen mit csinál, majd végül az eredményeket.
 
- Az RDFSharp fájlból gráfot készítő funkcióját teszteltük. Négyféle fájltípust támogat: xml, turtle, trix, nTrilples. A célom az volt a tezstekkel, hogy kiderüljön,
+ Kétféle funciót teszteltünk: Az RDFSharp fájlból gráfot készítő funkcióját, és a scenario2-ben az RDF model triple, container és collection elemeinek létrehozását.
+ 
+ ### Fájlból beolvasás
+ 
+ Négyféle fájltípust támogat: xml, turtle, trix, nTrilples. A célom az volt a tesztekkel, hogy kiderüljön,
  hogy melyik fut a legyorsabban, és használja a legkevesebb erőforrást. 
  Ezért ugyanazt a gráfot korábban leszerializáltattam mind a négy fájlformátumba, ezeket a fájlokat olvassuk be a teszt során.
  Minden teszt külön metódust kell létrehozni, [Benchmark] attribútummal. Az osztály elé írt [SimpleJob] attribútummal lehet az egyes metódusok futásainak számát be
@@ -32,3 +36,6 @@ Memóriában az xml a nyerő, sebességben a trix, de nem olyan nagy az eltéré
  
  Warningok, hintek, jelmagyarázat, összfutásidő:
  ![](4.png)
+ 
+ ### Triple, container és collection
+A scenario5-ben az RDF model triple, container és collection elemeit teszteljük. Az elemeket egy-egy for-cikluson belül hozzuk létre, majd hozzáadjuk őket egy gráfhoz. A ciklusok 100-szor futnak le. A triple-t két hasonló módon is teszteljük: egyszer Resource, Vocabulary és TypedLiteral, egyszer pedig Resource, Vocabulary és PlainLiteral típust adunk a konstruktorának. A container konstruktorában megadjuk a ContainerTypest és az ItemTypest. Végül, a collection konstruktorában csupán egy ItemTypes-ra van szükség.
