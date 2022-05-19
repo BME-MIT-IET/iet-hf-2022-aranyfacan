@@ -55,5 +55,4 @@ jobs:
 
   dotnetbuild:
     name: dotnet.yml
-    runs-on: ubuntu-latest
     uses: ./.github/workflows/dotnet.yml
