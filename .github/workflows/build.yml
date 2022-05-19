@@ -45,14 +45,11 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"BME-MIT-IET_iet-hf-2022-aranyfacan" /o:"bme-mit-iet-org" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths=coverage.xml
-          dotnet restore
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"BME-MIT-IET_iet-hf-2022-aranyfacan" /o:"bme-mit-iet-org" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths=coverage.xml        dotnet restore
           dotnet build --configuration release
           dotnet test --no-build --verbosity normal
           dotnet test  -p:CollectCoverage=true -p:CoverletOutput=TestResults/ -p:CoverletOutputFormat=opencover --no-build --verbosity normal RDFSharp.Test/
           coverlet .\RDFSharp.Test\bin\Debug\net6.0\RDFSharp.Test.dll
-          --target "dotnet" 
-          --targetargs "test --no-build"
           -f=opencover 
           -o="coverage.xml"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
