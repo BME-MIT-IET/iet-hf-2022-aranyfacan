@@ -41,7 +41,7 @@ jobs:
         gist-auth-token: ${{ secrets.GIST_AUTH_TOKEN }}
     
   print:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Print code coverage
